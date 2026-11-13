@@ -1,0 +1,178 @@
+indexing transito_aire_junio2024.csv [===============] 18.25GB/s, eta:  0s                                                                          Rows: 2,160
+Columns: 5
+$ hora     [3m[38;5;246m<dttm>[39m[23m 2024-06-01 00:00:00[38;5;246m, [39m2024-06-01 01:00:00[38;5;246m, [39m2024-06-01 0…
+$ transito [3m[38;5;246m<dbl>[39m[23m 192[38;5;246m, [39m103[38;5;246m, [39m95[38;5;246m, [39m94[38;5;246m, [39m100[38;5;246m, [39m223[38;5;246m, [39m240[38;5;246m, [39m384[38;5;246m, [39m571[38;5;246m, [39m754[38;5;246m, [39m868[38;5;246m, [39m10…
+$ no2      [3m[38;5;246m<dbl>[39m[23m [31mNA[39m[38;5;246m, [39m[31mNA[39m[38;5;246m, [39m[31mNA[39m[38;5;246m, [39m[31mNA[39m[38;5;246m, [39m[31mNA[39m[38;5;246m, [39m[31mNA[39m[38;5;246m, [39m[31mNA[39m[38;5;246m, [39m[31mNA[39m[38;5;246m, [39m[31mNA[39m[38;5;246m, [39m[31mNA[39m[38;5;246m, [39m[31mNA[39m[38;5;246m, [39m[31mNA[39m[38;5;246m, [39m[31mNA[39m[38;5;246m, [39m[31mNA[39m[38;5;246m,[39m…
+$ pm25     [3m[38;5;246m<dbl>[39m[23m 10.250000[38;5;246m, [39m6.566667[38;5;246m, [39m4.400000[38;5;246m, [39m3.283333[38;5;246m, [39m3.000000[38;5;246m, [39m3.15…
+$ estacion [3m[38;5;246m<chr>[39m[23m "Curva de Maronias"[38;5;246m, [39m"Curva de Maronias"[38;5;246m, [39m"Curva de Mar…
+# A tibble: 3 × 5
+  estacion          filas sin_transito sin_no2 sin_pm25
+  <chr>             <int>        <int>   <int>    <int>
+1 Curva de Maronias   720            0      65        0
+2 Museo Romántico     720            0     720      144
+3 Tres Cruces         720            0     429      326
+Rows: 2,160
+Columns: 14
+$ hora           <dttm> 2024-06-01 00:00:00, 2024-06-01 01:00:00, 2024-0…
+$ transito       <dbl> 192, 103, 95, 94, 100, 223, 240, 384, 571, 754, 8…
+$ no2            <dbl> NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, N…
+$ pm25           <dbl> 10.250000, 6.566667, 4.400000, 3.283333, 3.000000…
+$ estacion       <chr> "Curva de Maronias", "Curva de Maronias", "Curva …
+$ h              <int> 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14,…
+$ dia            <date> 2024-06-01, 2024-06-01, 2024-06-01, 2024-06-01, …
+$ tipo_dia       <chr> "fin de semana", "fin de semana", "fin de semana"…
+$ franja         <fct> madrugada, madrugada, madrugada, madrugada, madru…
+$ hora_pico      <chr> "resto", "resto", "resto", "resto", "resto", "res…
+$ transito_rel   <dbl> 0.2535053, 0.1359950, 0.1254323, 0.1241120, 0.132…
+$ nivel_transito <fct> bajo, bajo, bajo, bajo, bajo, bajo, bajo, bajo, m…
+$ transito_miles <dbl> 0.192, 0.103, 0.095, 0.094, 0.100, 0.223, 0.240, …
+$ log_pm25       <dbl> 2.327278, 1.882006, 1.481605, 1.188859, 1.098612,…
+# A tibble: 3 × 6
+  estacion          horas minimo mediana media maximo
+  <chr>             <int>  <dbl>   <dbl> <dbl>  <dbl>
+1 Curva de Maronias   720      3   11.9   20.1  244. 
+2 Museo Romántico     576      3    6.43  10.7   92.3
+3 Tres Cruces         394      3   15.9   21.7  106  
+# A tibble: 12 × 6
+   estacion          franja    transito transito_rel   no2  pm25
+   <chr>             <fct>        <dbl>        <dbl> <dbl> <dbl>
+ 1 Curva de Maronias madrugada     376.        0.496  23.4 19.6 
+ 2 Curva de Maronias mañana        891.        1.18   43.0 14.4 
+ 3 Curva de Maronias tarde        1048.        1.38   30.7 13.3 
+ 4 Curva de Maronias noche         714.        0.943  40.2 32.9 
+ 5 Museo Romántico   madrugada     555.        0.208 NaN   10.8 
+ 6 Museo Romántico   mañana       3069.        1.15  NaN    9.18
+ 7 Museo Romántico   tarde        4504.        1.69  NaN    7.55
+ 8 Museo Romántico   noche        2564.        0.959 NaN   15.3 
+ 9 Tres Cruces       madrugada   10069.        0.399  23.5 19.8 
+10 Tres Cruces       mañana      29021.        1.15   39.0 18.4 
+11 Tres Cruces       tarde       38216.        1.51   47.3 17.2 
+12 Tres Cruces       noche       23711.        0.939  42.9 31.9 
+# A tibble: 6 × 6
+  estacion          tipo_dia        transito transito_rel   no2  pm25
+  <chr>             <chr>              <dbl>        <dbl> <dbl> <dbl>
+1 Curva de Maronias fin de semana       683.        0.901  28.5  20.3
+2 Curva de Maronias lunes a viernes     795.        1.05   36.7  19.9
+3 Museo Romántico   fin de semana      1789.        0.669 NaN    10.2
+4 Museo Romántico   lunes a viernes    3115.        1.17  NaN    10.9
+5 Tres Cruces       fin de semana     19790.        0.784  35.5  22.5
+6 Tres Cruces       lunes a viernes   27987.        1.11   39.6  21.3
+# A tibble: 6 × 4
+  estacion          nivel_transito   no2 horas
+  <chr>             <fct>          <dbl> <int>
+1 Curva de Maronias bajo            27.5   204
+2 Curva de Maronias medio           37.5   216
+3 Curva de Maronias alto            37.3   235
+4 Tres Cruces       bajo            25.2    97
+5 Tres Cruces       medio           41.2    96
+6 Tres Cruces       alto            48.3    98
+# A tibble: 2 × 3
+  estacion          transito_no2 no2_pm25
+  <chr>                    <dbl>    <dbl>
+1 Curva de Maronias        0.147    0.548
+2 Tres Cruces              0.588    0.399
+# A tibble: 3 × 2
+  estacion          transito_pm25
+  <chr>                     <dbl>
+1 Curva de Maronias       -0.153 
+2 Museo Romántico         -0.0983
+3 Tres Cruces             -0.0250
+
+=== EJERCICIO 1 ===
+           estacion filas sin_transito sin_no2 sin_pm25 sin_franja
+1 Curva de Maronias   720            0      65        0          0
+2   Museo Romántico   720            0     720      144          0
+3       Tres Cruces   720            0     429      326          0
+  sin_tipo_dia sin_transito_rel sin_log_pm25
+1            0                0            0
+2            0                0          144
+3            0                0          326
+
+=== EJERCICIO 2 ===
+Tránsito promedio por hora, de mayor a menor (Tres Cruces, lunes a viernes):
+  h hora_pico transito
+ 17 hora pico    47386
+ 16     resto    44706
+  8 hora pico    42880
+ 15     resto    42213
+  9 hora pico    41121
+ 12     resto    41049
+ 14     resto    40682
+ 13     resto    40548
+ 11     resto    39055
+ 10     resto    38393
+ 18 hora pico    36668
+ 19 hora pico    31531
+  7 hora pico    29440
+ 20     resto    27160
+ 21     resto    23164
+ 22     resto    18707
+  6     resto    16318
+ 23     resto    15688
+  0     resto    12873
+  5     resto    10634
+  1     resto     8906
+  3     resto     7625
+  2     resto     7610
+  4     resto     7322
+
+Horas con más de 40000 vehículos por hora: 8 9 12 13 14 15 16 17 
+Horas marcadas como pico que no están entre ellas: 7 18 19 
+Horas que están entre ellas y no se marcaron como pico: 12 13 14 15 16 
+Guardada: ej2_transito_por_hora.png 
+Guardada: ej3_pm25_por_franja.png 
+
+=== EJERCICIO 3 ===
+          estacion franja_max_pm25 franja_max_transito
+ Curva de Maronias           noche               tarde
+   Museo Romántico           noche               tarde
+       Tres Cruces           noche               tarde
+
+=== EJERCICIO 4 ===
+   (Intercept) transito_miles           pm25   franjamañana 
+          9.08           0.65           0.45           2.80 
+   franjatarde    franjanoche 
+          5.41           6.21 
+R² sin franja (modelo_tc3): 0.473 
+R² con franja (modelo_tc4): 0.486 
+
+=== EJERCICIO 5 ===
+   (Intercept) transito_miles           pm25          noche 
+          8.98           0.77           0.44           3.82 
+R² (modelo_tc5): 0.481 
+Guardada: ej6_rectas_por_franja.png 
+
+=== EJERCICIO 6 ===
+Pendiente de la recta en cada franja (µg/m³ por cada mil vehículos):
+    franja horas pendiente
+ madrugada    72      2.94
+    mañana    73      0.51
+     tarde    74      0.80
+     noche    72      1.09
+             (Intercept)           transito_miles 
+                   25.52                     0.58 
+               madrugada transito_miles:madrugada 
+                  -31.39                     2.36 
+R² solo con tránsito (modelo_tc): 0.345 
+R² con la interacción (modelo_tc7): 0.398 
+Guardada: ej7_tarde_por_tipo_de_dia.png 
+
+=== EJERCICIO 7 ===
+        tipo_dia horas transito_minimo transito_medio transito_maximo
+   fin de semana    24            21.6           28.9            38.9
+ lunes a viernes    50            38.3           42.2            48.8
+ no2_medio
+      41.8
+      50.0
+            (Intercept)          transito_miles                    pm25 
+                   9.99                    0.80                    0.44 
+                  noche tipo_dialunes a viernes 
+                   3.88                   -2.54 
+R² sin tipo de día (modelo_tc5): 0.481 
+R² con tipo de día (modelo_tc8): 0.486 
+
+=== CONTROL ===
+Filas de datos: 2160   Horas con NO2 en Tres Cruces: 291 
+Horas de tránsito alto: 8 9 12 13 14 15 16 17 
+R² de los modelos 3, 4, 5, 7 y 8: 0.473 0.486 0.481 0.398 0.486 
+Figuras guardadas: 4 

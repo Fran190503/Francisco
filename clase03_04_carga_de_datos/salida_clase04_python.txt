@@ -1,0 +1,73 @@
+--- Archivo cargado: residuos_en_kg_retirados_en_playas.csv ---
+
+--- 4. Dimensiones y tipos ---
+Filas y columnas: (1063, 4)
+fecha             str
+playa             str
+sector            str
+kg_retirados    int64
+dtype: object
+
+Primeras 5 filas:
+     fecha               playa sector  kg_retirados
+0  2026-07         PLAYA BRAVA   Este          2333
+1  2026-07         PLAYA BUCEO   Este          7496
+2  2026-07       PLAYA CAPURRO  Oeste           340
+3  2026-07      PLAYA CARRASCO   Este          9483
+4  2026-07  PLAYA DE LA MULATA   Este          1385
+
+--- 5. Valores únicos por columna ---
+fecha            43
+playa            25
+sector            2
+kg_retirados    843
+dtype: int64
+
+Combinaciones fecha + playa repetidas: 2
+       fecha          playa sector  kg_retirados
+387  2025-03    PLAYA BUCEO   Este          7196
+388  2025-03    PLAYA BUCEO   Este             0
+407  2025-03  PLAYA RAMIREZ   Este         38329
+408  2025-03  PLAYA RAMIREZ   Este         29243
+
+--- 6. Faltantes por columna ---
+fecha           0
+playa           0
+sector          1
+kg_retirados    0
+dtype: int64
+
+Filas con algún faltante:
+       fecha        playa sector  kg_retirados
+423  2025-02  PLAYA HONDA    NaN         10791
+
+Celdas con texto vacío: 0
+
+--- 7. Filas exactamente iguales ---
+0
+
+--- 8. Coherencia ---
+Playas que figuran en más de un sector:
+playa          sector
+PLAYA CAPURRO  Este       2
+               Oeste     41
+PLAYA DEL GAS  Este      33
+               Oeste      9
+dtype: int64
+
+Filas con 0 kg: 182 de 1063
+
+Playas por mes (cuántos meses tienen cada cantidad):
+23     1
+24    12
+25    29
+27     1
+Name: count, dtype: int64
+
+=== CONTROL ===
+Filas: 1063
+Meses: 43 de 2023-01 a 2026-07
+Playas: 25
+Faltantes en sector: 1
+Pares fecha + playa repetidos: 2
+Playas en dos sectores: 2

@@ -1,0 +1,91 @@
+UnicodeDecodeError : 'utf-8' codec can't decode byte 0xed in position 107: invalid continuation byte
+
+objeto_id               int64
+textura                   str
+rigidez                   str
+num_aristas             int64
+peso_estimado_g       float64
+certeza_observador      int64
+dtype: object
+Peso medio leído bien: 71.6
+
+peso con decimal=','  -> float64
+peso sin declararlo   -> str
+primeros valores sin declararlo: ['45,0', '120,5', '15,0']
+Directorio de trabajo: /Users/franciscoferraz/Documents/GitHub/Francisco/clase03_04_carga_de_datos
+Ruta armada desde el archivo: /Users/franciscoferraz/Documents/GitHub/Francisco/clase03_04_carga_de_datos/datos/caja_negra.csv
+(10, 6)
+Media ingenua: 48.45
+
+Primer intento, error: '<' not supported between instances of 'float' and 'str' 
+
+objeto_id            ['1', '10', '2', '3', '4', '5', '6', '7', '8', '9']
+textura              ['poroso', 'rugoso', 's/d', 'suave']
+rigidez              ['blando', 'medio', 'rígido']
+num_aristas          ['0.0', '12.0', '4.0', '6.0', '8.0', '<vacío>']
+peso_estimado_g      ['-99.0', '120.5', '210.0', '22.0', '35.0', '45.0', '70.0', '85.0', '95.0']
+certeza_observador   ['2.0', '3.0', '4.0', '5.0', '<vacío>']
+
+Faltantes que read_csv() reconoce solo:
+objeto_id             0
+textura               0
+rigidez               0
+num_aristas           1
+peso_estimado_g       0
+certeza_observador    1
+dtype: int64
+
+Media ingenua  : 48.45
+Media declarada: 85.31
+
+Faltantes por columna después de declarar:
+objeto_id             0
+textura               1
+rigidez               0
+num_aristas           1
+peso_estimado_g       2
+certeza_observador    1
+dtype: int64
+(40, 5)
+ID Transaccion       int64
+Fecha Operacion        str
+Sucursal               str
+Monto UYU          float64
+Medio de Pago          str
+dtype: object 
+
+   ID Transaccion Fecha Operacion  Sucursal   Monto UYU Medio de Pago
+0            1001      02/03/2026     Centro      1.295       credito
+1            1002      03/03/2026    Centro       3.416        debito
+2            1003      04/03/2026   Carrasco      1.055      efectivo
+3            1004      05/03/2026   Pocitos       2.207      efectivo
+4            1005      06/03/2026   Pocitos       2.032        debito
+
+Primeras lineas del archivo tal cual:
+    ID Transaccion,Fecha Operacion,Sucursal ,Monto UYU,Medio de Pago
+    1001,02/03/2026,Centro,1.295,credito
+    1002,03/03/2026,Centro ,3.416,debito
+    1003,04/03/2026, Carrasco,1.055,efectivo
+
+id_transaccion              int64
+fecha_operacion    datetime64[us]
+sucursal                 category
+monto_uyu                   int64
+medio_de_pago            category
+dtype: object 
+
+       id_transaccion      fecha_operacion    monto_uyu
+count       40.000000                   40    40.000000
+mean      1020.500000  2026-03-21 12:00:00  1471.500000
+min       1001.000000  2026-03-02 00:00:00   270.000000
+25%       1010.750000  2026-03-11 18:00:00   821.750000
+50%       1020.500000  2026-03-21 12:00:00  1248.500000
+75%       1030.250000  2026-03-31 06:00:00  2150.000000
+max       1040.000000  2026-04-10 00:00:00  3416.000000
+std         11.690452                  NaN   825.936392 
+
+Sucursales antes de limpiar : [' Carrasco', 'Centro', 'Centro ', 'Pocitos ']
+Sucursales después          : ['Carrasco', 'Centro', 'Pocitos']
+Rango de fechas             : 2026-03-02 a 2026-04-10
+Media del monto, ingenua    : 169.28
+Media del monto, corregida  : 1471.5

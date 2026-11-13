@@ -1,0 +1,36 @@
+objeto_id                int64
+textura               category
+rigidez               category
+num_aristas              int64
+peso_estimado_g        float64
+certeza_observador    category
+dtype: object
+
+Observaciones con rigidez mayor a 'blando': 6
+Categorías de certeza: [1, 2, 3, 4, 5]
+df       -> []
+df_roto  -> ['1 peso(s) que no son positivos', '1 conteo(s) de aristas negativos', '1 objeto_id repetido(s)']
+             variable  ...                                  faltante
+0     peso_estimado_g  ...                                     vacío
+1           objeto_id  ...                                 no admite
+2             textura  ...                                       s/d
+3             rigidez  ...                                       s/d
+4         num_aristas  ...  vacío (no se pudo contar; distinto de 0)
+5  certeza_observador  ...                                     vacío
+
+[6 rows x 6 columns]
+
+Filas y columnas del diccionario: (6, 6)
+Celdas vacías en 'faltante': 0
+columnas originales: ['objeto_id', 'textura', 'rigidez', 'num_aristas', 'peso_estimado_g', 'certeza_observador']
+columnas releídas  : ['Unnamed: 0', 'objeto_id', 'textura', 'rigidez', 'num_aristas', 'peso_estimado_g', 'certeza_observador']
+
+rigidez original : category
+rigidez releída  : str
+
+columnas tras corregir: ['objeto_id', 'textura', 'rigidez', 'num_aristas', 'peso_estimado_g', 'certeza_observador']
+rigidez tras corregir : category - ordenada: True
+
+textura en parquet: category - ordenada: False
+rigidez en parquet: category - ordenada: True
+certeza_observador en parquet: int64 - dejó de ser categórica

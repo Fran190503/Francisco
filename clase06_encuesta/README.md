@@ -164,3 +164,7 @@ Quien responde "Nunca" en la pregunta 1 no contesta la 2, la 3 ni la 4. Esas och
 - El problema de una pregunta mal hecha no se ve en la pregunta sino en la tabla: columnas que mezclan dos cosas, tramos donde un valor cae dos veces, textos que después hay que separar a mano.
 - Conviene diseñar primero la tabla que se quiere y después las preguntas, que es lo que obliga a hacer el ejercicio 2.
 - Una celda vacía puede ser tres cosas distintas: no corresponde, no quiso responder o se salteó la pregunta. Si no se anota cuál es, después no hay forma de saberlo.
+
+---
+
+Uso de IA: trabajé con un asistente (Claude) para resolver los ejercicios y redactar el texto.

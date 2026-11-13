@@ -107,3 +107,7 @@ Si hubiera graficado todos los promedios sin mirar cuántas horas tenían detrá
 - Antes de promediar hay que contar. El número que acompaña a cada promedio (cuántas horas tiene detrás) dice si se puede usar.
 - Hay dos formas de que falte un dato: que la fila no exista o que exista vacía. Acá las filas están todas y lo que falta es el valor.
 - Bajar el dato con código y anotar de dónde salió lleva dos minutos, y evita lo que me pasó con el CSV de playas.
+
+---
+
+Uso de IA: trabajé con un asistente (Claude) para el código y la redacción. Corrí todo en mi máquina.

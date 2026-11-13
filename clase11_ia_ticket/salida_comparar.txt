@@ -1,0 +1,99 @@
+REFERENCIA (a mano): 25 ítems, suma 1697.51   TOTAL impreso: 1697.51
+GEMINI:              25 ítems, suma 1697.51
+
+COMPARACIÓN ÍTEM POR ÍTEM
+(se toman como iguales las descripciones que solo cambian en mayúsculas o espacios)
+
+ 1. a mano : MAYONESA D. PACK LIGHT 500CC.  |  145.00
+    Gemini : MAYONESA D. PACK LIGHT 500CC.  |  145.00
+    -> igual
+ 2. a mano : COLECCIONABLE  |  -21.00
+    Gemini : COLECCIONABLE  |  -21.00
+    -> igual
+ 3. a mano : TOMATE MIX DE CHERRYS 500 G  |  249.00
+    Gemini : TOMATE MIX DE CHERRYS 500 G  |  249.00
+    -> igual
+ 4. a mano : 10% DTO. BPS  |  -24.90
+    Gemini : 10% DTO. BPS  |  -24.90
+    -> igual
+ 5. a mano : BOLSA RECICLADA TIENDA  |  23.50
+    Gemini : BOLSA RECICLADA TIENDA  |  23.50
+    -> igual
+ 6. a mano : HUEVO COLOR.PREMIUM DOC.PRODHI  |  265.00
+    Gemini : HUEVO COLOR.PREMIUM DOC.PRODHI  |  265.00
+    -> igual
+ 7. a mano : COLECCIONABLE  |  -56.00
+    Gemini : COLECCIONABLE  |  -56.00
+    -> igual
+ 8. a mano : REFRESCO COCA COLA ZERO 3L  |  238.00
+    Gemini : REFRESCO COCA COLA ZERO 3L  |  238.00
+    -> igual
+ 9. a mano : 10% DTO. BPS  |  -23.80
+    Gemini : 10% DTO. BPS  |  -23.80
+    -> igual
+10. a mano : CHIMICHURRI 15G LA MANCHEGA  |  46.00
+    Gemini : CHIMICHURRI 15G LA MANCHEGA  |  46.00
+    -> igual
+11. a mano : COLECCIONABLE  |  -9.00
+    Gemini : COLECCIONABLE  |  -9.00
+    -> igual
+12. a mano : REFRESCO SPRITE S/AZ 1.5L  |  157.00
+    Gemini : REFRESCO SPRITE S/AZ 1.5L  |  157.00
+    -> igual
+13. a mano : 10% DTO. BPS  |  -15.70
+    Gemini : 10% DTO. BPS  |  -15.70
+    -> igual
+14. a mano : REFRESCO COCA COLA LIGHT 3L  |  233.00
+    Gemini : REFRESCO COCA COLA LIGHT 3L  |  233.00
+    -> igual
+15. a mano : 10% DTO. BPS  |  -23.30
+    Gemini : 10% DTO. BPS  |  -23.30
+    -> igual
+16. a mano : MANDARINA ORRI  |  50.90
+    Gemini : MANDARINA ORRI  |  50.90
+    -> igual
+17. a mano : 10% DTO. BPS  |  -5.09
+    Gemini : 10% DTO. BPS  |  -5.09
+    -> igual
+18. a mano : PEREJIL BOLSA 60GRS  |  35.00
+    Gemini : PEREJIL BOLSA 60GRS  |  35.00
+    -> igual
+19. a mano : 10% DTO. BPS  |  -3.50
+    Gemini : 10% DTO. BPS  |  -3.50
+    -> igual
+20. a mano : AJO UNIDAD  |  49.00
+    Gemini : AJO UNIDAD  |  49.00
+    -> igual
+21. a mano : 10% DTO. BPS  |  -4.90
+    Gemini : 10% DTO. BPS  |  -4.90
+    -> igual
+22. a mano : ESPONJA TIENDA INGLESA 3 UNIDA  |  99.00
+    Gemini : ESPONJA TIENDA INGLESA 3 UNIDA  |  99.00
+    -> igual
+23. a mano : 10% DTO. BPS  |  -9.90
+    Gemini : 10% DTO. BPS  |  -9.90
+    -> igual
+24. a mano : PAPA ROSADA 2 KILOS  |  338.00
+    Gemini : PAPA ROSADA 2 KILOS  |  338.00
+    -> igual
+25. a mano : 10% DTO. BPS  |  -33.80
+    Gemini : 10% DTO. BPS  |  -33.80
+    -> igual
+
+RESUMEN
+   igual                          25
+   distinto monto                 0
+   distinta descripción           0
+   distinta descripción y monto   0
+   FALTA en Gemini                0
+   SOBRA en Gemini                0
+
+TASA DE RECUPERACIÓN
+   ítems de la referencia que aparecen en lo leído: 25 de 25 = 1.00
+   de esos, sin ninguna diferencia:                 25 de 25 = 1.00
+
+CONTROL DE CONSISTENCIA (suma de ítems - TOTAL impreso)
+   Gemini: 1697.51 - 1697.51 = 0.00 -> CIERRA
+   a mano: 1697.51 - 1697.51 = 0.00 -> CIERRA
+
+CONTROL: 25 ítems a mano, 25 ítems de Gemini, 0 diferencias

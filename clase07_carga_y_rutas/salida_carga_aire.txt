@@ -1,0 +1,148 @@
+--- 1. Rutas ---
+Raíz del proyecto: Francisco 
+Archivo de datos : /clase07_carga_y_rutas/datos/automaticas_24.csv 
+
+--- 2. Archivo ---
+Tamaño: 6.6 MB
+Descargado el: 13/11/2026 
+
+--- 4.1 Dimensiones y tipos ---
+Filas y columnas: 70272 10 
+'data.frame':	70272 obs. of  10 variables:
+ $ pollutant_id       : chr  "NO2" "NO2" "NO2" "NO2" ...
+ $ pollutant_averaging: int  1 1 1 1 1 1 1 1 1 1 ...
+ $ date               : chr  "2024-01-01 00:00:00" "2024-01-01 01:00:00" "2024-01-01 02:00:00" "2024-01-01 03:00:00" ...
+ $ pollutant_value    : int  NA NA NA NA NA NA NA NA NA NA ...
+ $ pollutant_unit     : chr  "ug/m3" "ug/m3" "ug/m3" "ug/m3" ...
+ $ station_id         : chr  "UYMVD_E6" "UYMVD_E6" "UYMVD_E6" "UYMVD_E6" ...
+ $ X                  : int  579229 579229 579229 579229 579229 579229 579229 579229 579229 579229 ...
+ $ Y                  : int  6142255 6142255 6142255 6142255 6142255 6142255 6142255 6142255 6142255 6142255 ...
+ $ ID_estacion        : chr  "Curva de Maronas" "Curva de Maronas" "Curva de Maronas" "Curva de Maronas" ...
+ $ method_id          : chr  "UYMVD_NO2_2" "UYMVD_NO2_2" "UYMVD_NO2_2" "UYMVD_NO2_2" ...
+
+--- 4.2 Valores distintos por columna ---
+       pollutant_id pollutant_averaging                date 
+                  4                   1                8784 
+    pollutant_value      pollutant_unit          station_id 
+                286                   1                   4 
+                  X                   Y         ID_estacion 
+                  4                   4                   4 
+          method_id 
+                  4 
+
+Período de promedio (horas): 1 
+Unidad: ug/m3 
+
+--- 4.3 Qué mide cada estación ---
+                  
+                    NO2   O3 PM10  PM2
+  Ciudad Vieja2       0    0    0 8784
+  Colon 2             0 8784 8784    0
+  Curva de Maronas 8784 8784    0 8784
+  Tres Cruces 4    8784    0    0 8784
+
+--- 4.4 Identificador ---
+Combinaciones contaminante + estación + hora repetidas: 0 
+Filas exactamente iguales: 0 
+
+--- 4.5 Faltantes por columna ---
+       pollutant_id pollutant_averaging                date 
+                  0                   0                   0 
+    pollutant_value      pollutant_unit          station_id 
+              25455                   0                   0 
+                  X                   Y         ID_estacion 
+                  0                   0                   0 
+          method_id 
+                  0 
+
+--- 5.1 Fechas ---
+Tipo antes: character   Tipo después: POSIXct 
+Fechas que no se pudieron convertir: 0 
+Desde 01/01/2024 00:00 hasta 31/12/2024 23:00 
+
+--- 5.2 Estaciones ---
+ station_id      ID_estacion             zona
+   UYMVD_E6 Curva de Maronas Curva de Maroñas
+   UYMVD_E8          Colon 2            Colón
+   UYMVD_E5    Tres Cruces 4      Tres Cruces
+   UYMVD_E1   Ciudad Vieja 2     Ciudad Vieja
+Estaciones sin zona asignada: 0 
+
+--- 6. Horas por serie ---
+Horas de 2024: 8784 
+
+8784 
+   8 
+
+--- 7. Cobertura por estación y contaminante ---
+             zona contaminante horas_con_dato porcentaje
+      Tres Cruces          NO2           1723       19.6
+ Curva de Maroñas          NO2           2657       30.2
+            Colón           O3           3828       43.6
+            Colón         PM10           4754       54.1
+ Curva de Maroñas           O3           6883       78.4
+ Curva de Maroñas        PM2.5           8166       93.0
+     Ciudad Vieja        PM2.5           8399       95.6
+      Tres Cruces        PM2.5           8407       95.7
+
+Celdas sin dato en todo el archivo: 25455 de 70272 ( 36.2 %)
+
+--- 8. Ozono medio por mes (ug/m3) ---
+             zona mes o3_medio horas_con_dato horas_del_mes cobertura
+            Colón   1     28.3            647           744      87.0
+            Colón   2     43.6             28           696       4.0
+            Colón   3     21.8            569           744      76.5
+            Colón   4     28.5            646           720      89.7
+            Colón   5     25.5            585           744      78.6
+            Colón   6     26.3            561           720      77.9
+            Colón   7     20.3            450           744      60.5
+            Colón   8     37.2            342           744      46.0
+            Colón   9      NaN              0           720       0.0
+            Colón  10      NaN              0           744       0.0
+            Colón  11      NaN              0           720       0.0
+            Colón  12      NaN              0           744       0.0
+ Curva de Maroñas   1     30.0            708           744      95.2
+ Curva de Maroñas   2     35.3            685           696      98.4
+ Curva de Maroñas   3     27.0            431           744      57.9
+ Curva de Maroñas   4     21.9            565           720      78.5
+ Curva de Maroñas   5     24.0            556           744      74.7
+ Curva de Maroñas   6     32.9            596           720      82.8
+ Curva de Maroñas   7     29.7            401           744      53.9
+ Curva de Maroñas   8     33.5            698           744      93.8
+ Curva de Maroñas   9     38.1            671           720      93.2
+ Curva de Maroñas  10     43.4            701           744      94.2
+ Curva de Maroñas  11     61.9            141           720      19.6
+ Curva de Maroñas  12     36.1            730           744      98.1
+ confiable
+      TRUE
+     FALSE
+      TRUE
+      TRUE
+      TRUE
+      TRUE
+     FALSE
+     FALSE
+     FALSE
+     FALSE
+     FALSE
+     FALSE
+      TRUE
+      TRUE
+     FALSE
+      TRUE
+     FALSE
+      TRUE
+     FALSE
+      TRUE
+      TRUE
+      TRUE
+     FALSE
+      TRUE
+
+=== CONTROL ===
+Filas: 70272 
+Series (estación + contaminante): 8 
+Celdas sin dato: 25455 
+Series con menos de 75 % de cobertura: 4 
+Meses de ozono confiables: 13 de 24 
+Figuras guardadas: TRUE TRUE 

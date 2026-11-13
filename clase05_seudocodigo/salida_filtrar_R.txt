@@ -1,0 +1,3 @@
+Versión 1 (bucle):        22 25 30 
+Versión 2 (vectorizada):  22 25 30 
+Las dos versiones coinciden: TRUE 

@@ -1,0 +1,14 @@
+Lectura de CSV: ejemplo_utf8.csv
+  Leído con UTF-8.
+           playa sector  kg_retirados
+0  PLAYA RAMÍREZ   Este         38329
+1   PLAYA MALVÍN   Este          9248 
+
+Lectura de CSV: ejemplo_latin1.csv
+  [AVISO]: Error UTF-8, reintentando con latin-1...
+  Leído con latin-1.
+           playa sector  kg_retirados
+0  PLAYA RAMÍREZ   Este         38329
+1   PLAYA MALVÍN   Este          9248 
+
+Las dos tablas son iguales: True
